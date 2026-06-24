@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Premium;Tu Chofer;;;
+FN:Tu Chofer Premium
+ORG:Demo App - Tu Chofer Premium
+TITLE:Chofer Privado Premium
+TEL;TYPE=CELL,VOICE:+5210000000000
+NOTE:App demo de servicio de chofer privado premium. Viaja seguro, directo y a tu medida.
+END:VCARD

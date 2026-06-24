@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Chofer Premium | Demo App</title>
+    <meta name="description" content="App demo de servicio de chofer privado premium. Viaja seguro, directo y sin intermediarios.">
+    <!-- Favicon Premium SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ffffff'/><text x='50' y='76' font-family='Georgia, serif' font-size='50' font-weight='bold' text-anchor='middle' fill='%23000000'>TP</text></svg>">
+    <!-- Google Fonts: Inter as the Material/Uber standard font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Splash Screen Premium -->
+    <div class="splash-screen">
+        <div class="splash-logo">
+            <i data-lucide="car" class="splash-car-icon"></i>
+        </div>
+    </div>
+
+    <main>
+        <!-- DEMO Banner -->
+        <div class="demo-banner">🔷 VERSIÓN DEMO —  App de muestra sin fines comerciales</div>
+
+        <!-- 1. Hero Section -->
+        <section class="hero" id="hero" data-tour="Perfil del chofer con calificación 5.0, estadísticas de experiencia y acceso directo a WhatsApp.">
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+
+            <!-- Banner Overlay -->
+            <div class="hero-banner">
+                <div class="banner-image"></div>
+                <div class="availability-badge elevation-1">
+                    <span class="pulse-dot"></span> Disponible hoy
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="profile-header">
+                    <div class="profile-img-container">
+                        <div class="profile-placeholder"></div>
+                        <div class="rating-badge elevation-2">★ 5.0</div>
+                    </div>
+                </div>
+                
+                <h2 class="profile-name">Tu Chofer Premium</h2>
+
+                <!-- Estadísticas Desplegables -->
+                <details class="stats-dropdown">
+                    <summary class="stats-summary">
+                        <span>Experiencia en Plataformas</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" class="chevron" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <div class="stats-content elevation-1">
+                        <div class="stat-item">
+                            <strong class="count-up" data-target="2500" data-suffix="+">0</strong>
+                            <span>Viajes completados</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong class="count-up" data-target="3" data-suffix="+">0</strong>
+                            <span>Años de servicio</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong class="count-up" data-target="98" data-suffix="%">0</strong>
+                            <span>Puntualidad</span>
+                        </div>
+                    </div>
+                </details>
+                
+                <h1 class="hero-title">Viaja premium, sin complicaciones.</h1>
+                <p class="emotional-layer">Trato directo, profesional y a tu medida.</p>
+                
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary whatsapp-btn ripple elevation-1" data-type="standard">
+                        <svg class="w-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.198 0-.397.034-.57.01-.174-.024-.37-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+                        </svg>
+                        Pedir auto ahora
+                    </a>
+                    <p class="microcopy">Respuesta directa, sin intermediarios.</p>
+                    
+                    <a href="demo_contact.vcf" class="btn btn-secondary ripple" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" class="contact-icon" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                        Guardar Contacto Demo
+                    </a>
+                    <p class="microcopy light">Guarda el contacto demo en tu agenda.</p>
+
+                    <!-- Instrucciones de VCF Desplegables -->
+                    <details class="stats-dropdown vcf-instructions">
+                        <summary class="stats-summary">
+                            <span>¿Cómo guardar el contacto?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" class="chevron" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </summary>
+                        <div class="stats-content elevation-1 vcf-content">
+                            <div class="vcf-step">
+                                <strong>📁 ¿Qué es?</strong>
+                                <span>Al tocar el botón se descargará una Tarjeta Virtual de Presentación (VCF) de demostración.</span>
+                            </div>
+                            <div class="vcf-step">
+                                <strong>🍏 iOS (iPhone)</strong>
+                                <span>Abre el archivo desde la barra de Safari (📥) y presiona "Crear nuevo contacto" o "Añadir contacto" en la esquina superior.</span>
+                            </div>
+                            <div class="vcf-step">
+                                <strong>🤖 Android</strong>
+                                <span>Abre el archivo bajando la barra de notificaciones, selecciona "Guardar", y elige tu cuenta de Google.</span>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Viajes Recurrentes -->
+        <section class="section recurring reveal" data-tour="Programa tus viajes recurrentes y asegura tu ruta diaria sin estrés.">
+            <h2>Rutinas y Agendas</h2>
+            <div class="content-card elevation-1">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3>Asegura tu ruta diaria.</h3>
+                <p>Soluciona el estrés de pedir transporte todos los días. Programa tus viajes recurrentes con antelación garantizando disponibilidad.</p>
+                <a href="#" class="btn btn-outline whatsapp-btn ripple" data-type="recurrent">Programar mis viajes semanales</a>
+            </div>
+        </section>
+
+        <!-- Zona de Trabajo y Horarios -->
+        <section class="section zones-schedules reveal" data-tour="Cobertura en toda la zona metropolitana, con horarios flexibles de 6 AM a 11 PM.">
+            <h2>Zona de Trabajo</h2>
+            <div class="content-card elevation-1 map-card">
+                <div class="map-container">
+                    <div class="coverage-map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                            <circle cx="12" cy="10" r="8" stroke-dasharray="4 3"/>
+                        </svg>
+                        <span>Mapa de cobertura demo</span>
+                    </div>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-block">
+                        <div class="icon-bubble">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="s-text">
+                            <h4>Área Diaria</h4>
+                            <p>Zona Metropolitana de DemoCity.</p>
+                            <span class="subtext">*Viajes fuera de la zona base sujetos a disponibilidad.</span>
+                        </div>
+                    </div>
+                    <div class="schedule-separator"></div>
+                    <div class="schedule-block">
+                        <div class="icon-bubble">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="s-text">
+                            <h4>Horarios base</h4>
+                            <p>Lunes a Domingo<br><b>06:00 AM - 11:00 PM</b></p>
+                            <span class="subtext">*Vuelos de madrugada o eventos bajo reserva previa.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Ventajas & Vehículo -->
+        <section class="section advantages reveal" data-tour="Conoce el vehículo demo: un sedán ejecutivo plateado con acabados premium.">
+            <h2>Experiencia & Vehículo</h2>
+            <div class="vehicle-image-placeholder elevation-1">
+                <div class="vehicle-tags">
+                    <span class="v-tag">Sedán Ejecutivo Plateado</span>
+                    <span class="v-tag plate">Placas: DEMO-001</span>
+                </div>
+            </div>
+            <div class="advantages-list">
+                <div class="adv-item elevation-1">
+                    <div class="adv-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a2 2 0 0 0-1.6-.8H8.3a2 2 0 0 0-1.6.8L4 11l-5.16.86a1 1 0 0 0-.84.99V16h3m10 0a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0m-6 0a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0"/></svg>
+                    </div>
+                    <div class="adv-text">
+                        <h3>Viaje Premium</h3>
+                        <p>Sedán impecable y confortable para tu viaje.</p>
+                    </div>
+                </div>
+                <div class="adv-item elevation-1">
+                    <div class="adv-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="adv-text">
+                        <h3>Tarifa Justa</h3>
+                        <p>Precios fijos sin tarifas dinámicas por algoritmo.</p>
+                    </div>
+                </div>
+                <div class="adv-item elevation-1">
+                    <div class="adv-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="adv-text">
+                        <h3>Trato Directo</h3>
+                        <p>Total seguridad, siempre sabes con quién viajas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Prueba Social -->
+        <section class="section testimonial reveal" data-tour="Nuestros clientes nos respaldan. Calificación perfecta de 5 estrellas.">
+            <div class="content-card testimonial-card elevation-1">
+                <div class="quote-icon">"</div>
+                <p class="quote-text">Siempre puntual y muy profesional. Lo recomiendo totalmente para viajes ejecutivos diarios.</p>
+                <div class="quote-author">
+                    <div class="avatar-placeholder"></div>
+                    <div>
+                        <strong>Cliente Demo</strong>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Servicios -->
+        <section class="section services reveal" data-tour="Cuatro modalidades de servicio: viajes diarios, aeropuerto, por horas y ejecutivos.">
+            <h2>Modalidades</h2>
+            <div class="services-grid">
+                <div class="service-card elevation-1">
+                    <div class="s-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <div class="s-info">Viajes Diarios</div>
+                </div>
+                <div class="service-card elevation-1">
+                    <div class="s-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-.5-.5-2.5 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1.2 3.3c-.2.5.1 1.1.6 1.3l6.3 2L7 17l-3.3-.6c-.5-.1-.9.2-1.1.7L1.4 19c-.2.5.1 1.1.6 1.3l8.3 1.9c.4.1.9-.1 1.1-.6l1.4-3.8 6.5 2c.5.2 1.1-.2 1.3-.7z"/></svg>
+                    </div>
+                    <div class="s-info">Aeropuerto</div>
+                </div>
+                <div class="service-card elevation-1">
+                    <div class="s-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="s-info">Por Horas</div>
+                </div>
+                <div class="service-card elevation-1">
+                    <div class="s-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <div class="s-info">Ejecutivos</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CTA Final -->
+        <footer class="footer reveal" data-tour="Contáctanos directamente por WhatsApp. Respuesta rápida y sin intermediarios.">
+            <h2>Controla tu tiempo de viaje.</h2>
+            <a href="#" class="btn btn-primary whatsapp-btn ripple elevation-2" data-type="standard">Pedir viaje ahora</a>
+            <p class="footer-copy">© 2026 Tu Chofer Premium — Demo App</p>
+            <p class="footer-powered">POWERED BY <a href="https://mvgn.vercel.app/" target="_blank" rel="noopener noreferrer">MVGN Labs</a></p>
+        </footer>
+    </main>
+
+    <!-- Presentation Mode Toggle -->
+    <button class="tour-toggle" id="tourToggle" aria-label="Modo presentación">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+        </svg>
+    </button>
+
+    <!-- Tour Tooltip -->
+    <div class="tour-tooltip" id="tourTooltip">
+        <div class="tour-tooltip-text" id="tourText"></div>
+        <div class="tour-tooltip-nav">
+            <button class="tour-btn tour-prev" id="tourPrev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <span class="tour-counter" id="tourCounter">1/1</span>
+            <button class="tour-btn tour-next" id="tourNext" aria-label="Siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <button class="tour-btn tour-close" id="tourClose" aria-label="Cerrar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="floating-btn whatsapp-btn" data-type="standard">
+        <div class="btn-content ripple elevation-3">
+            <svg class="w-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.198 0-.397.034-.57.01-.174-.024-.37-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+            </svg>
+            Hablar ahora
+        </div>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
