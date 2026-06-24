@@ -174,7 +174,7 @@ Landing page mobile-first de demostración para un servicio de chofer privado pr
 
 ---
 
-**Firma humana:** Carlos MVGN ✓  
-**Nombre:** Carlos  
+**Firma humana:** Armando Ibañez ✓  
+**Nombre:** Armando Ibañez — CEO de MVGN Labs  
 **Fecha:** 2026-06-24  
 **[✓]** Aprobado
