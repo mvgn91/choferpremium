@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-06-24T12:00:00",
   "system": "MVGN Starter Kit v2.1",
-  "root": "C:\\Users\\Ncape\\Downloads\\MVGN Labs\\CARLOS UBER APP",
+  "root": "C:\\Users\\Ncape\\Downloads\\MVGN Labs\\chofer-premium-demo",
   "state": "COMPLETED",
   "mode": "FAST",
   "active_layer": "rules",
@@ -41,7 +41,7 @@
     "authority_loaded": true
   },
   "project": {
-    "name": "Tu Chofer Premium — Demo App",
+    "name": "Chofer Premium — Demo App",
     "version": "1.0.0",
     "type": "landing-page",
     "stack": "vanilla-html-css-js"

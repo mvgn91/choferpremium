@@ -1,5 +1,5 @@
 /**
- * Tu Chofer Premium — Demo App
+ * Chofer Premium — Demo App
  * Handles WhatsApp, scroll reveal, counter animation, and presentation tour
  */
 
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
-    // Placeholder phone number for demo
-    const PHONE_NUMBER = '5210000000000';
+    // Número de contacto para informes de la demostración
+    const PHONE_NUMBER = '523322621939';
     const MESSAGES = {
-        standard: "Hola, me gustaría cotizar un viaje por favor.",
-        recurrent: "Hola, me interesa programar viajes recurrentes."
+        standard: "Hola, me interesa la demo de 'Chofer Premium' (servicio de chofer privado). Me gustaría recibir más información del proyecto.",
+        recurrent: "Hola, vi la demo de servicios recurrentes de 'Chofer Premium'. Me gustaría saber más del proyecto."
     };
 
     // ===== THEME TOGGLE =====
